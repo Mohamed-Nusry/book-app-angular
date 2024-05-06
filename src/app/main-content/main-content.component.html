@@ -1,0 +1,4 @@
+
+<app-home *ngIf="authenticated"></app-home>
+
+<app-login-form *ngIf="!authenticated" (onSubmitLoginEvent)="onLogin($event)" />
